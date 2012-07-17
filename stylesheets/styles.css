@@ -133,9 +133,9 @@ header {
 .logo {
   background: url(../images/logo.png) no-repeat;
   float: left;
-  height: 62px;
+  height: 53px;
   margin-top: 15px;
-  width: 350px;
+  width: 300px;
 }
 
 /* ----- Navigation----- */
@@ -367,7 +367,7 @@ only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
   .logo{
     background-image: url(../images/logo_@2x.png);
-    -webkit-background-size: 350px;
-    background-size: 350px;
+    -webkit-background-size: 300px;
+    background-size: 300px;
   }
 }
