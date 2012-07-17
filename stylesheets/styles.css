@@ -92,19 +92,13 @@ img {
   width: 75%;
 }
 
-/* ----- Basic Font Styles ----- */
-a, a:hover, a:focus, a:active {text-decoration: none; cursor: pointer;}
-b {font-family: 'BitterBold', serif; font-weight: bold;}
-sup a {color: #c41230;font-size: 1em;vertical-align: super;}
-i {font-family: 'BitterItalic', serif;font-style: italic;}
-
 
 /* ----- Misc ----- */
 
 h2 {
   color: #566c11;
   font-family: 'GentiumBasicRegular', serif;
-  font-size: 2.8em;
+  font-size: 2.4em;
   margin-bottom: 15px;
 }
 
@@ -146,14 +140,16 @@ header {
 
 nav {
   float: right;
-  font-size: 2em;
-  margin-top: 28px;
+  font-size: 2.4em;
+  margin-top: 32px;
 }
 
 nav ul li {
   display: inline;
-  margin-left: 10px;
+  margin-left: 30px;
 }
+
+nav ul li a {color: #4b3905;}
 
 /* ----- Hero ----- */
 .hero {
@@ -162,7 +158,7 @@ nav ul li {
   font-family: 'GentiumBasicRegular', serif;
   font-size: 7.5em;
   float: left;
-  padding: 40px;
+  padding: 40px 0 40px 0;
   margin-bottom: 25px;
   margin-top: 25px;
   text-align: center;
@@ -178,20 +174,20 @@ nav ul li {
 
 #contact p {
   float: left;
-  font-size: 2em;
+  font-size: 1.8em;
   width: 60%;
 }
 
 #contact aside {
-  border: 1px solid #d1d1d1;
+  border-left: 1px solid #d1d1d1;
   float: right;
-  padding: 15px 0 15px 25px;
+  padding: 15px 0 15px 35px;
   width: 30%;
 }
 
 #contact .foney {
   font-family: 'OpenSansBold', sans-serif;
-  font-size: 3.5em;
+  font-size: 3em;
   font-weight: bold;
   margin-bottom: 18px;
 }
@@ -200,63 +196,166 @@ nav ul li {
   background: #edebdf;
   border-radius: 3px;
   color: #566c11;
-  font-size: 2em;
+  font-size: 1.7em;
   padding: 8px;
 }
 
 #contact .addy {
-  font-size: 1.8em;
+  font-size: 1.4em;
   margin-top: 20px;
+  width: 100%;
+}
+
+.caps {
+  font-size: .9em;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  opacity: .6;
+}
+
+.do {
+  font-family: 'GentiumBasicItalic', serif;
+  font-style: italic;
+}
+
+
+/* ----- About ----- */
+
+#about {
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+#about p {
+  font-size: 1.8em;
+}
+
+#about img {
+  float: left;
+  margin: 0 15px 10px 0;
+  border: 8px solid #fff;
+  box-shadow: 1px 1px 3px #ccc;
 }
 
 /* ----- Footer ----- */
 
 footer {
-  float: left;
+  border-top: 1px solid #d1d1d1;
+  padding-top: 10px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 75%;
 }
 
 
 /* --------------------------------------------------------------------
-   Retina Images
+   Media Queries
 -------------------------------------------------------------------- */
+/* < 800px */
 
-@media
-only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5) {
-  .purchase{
-    background-image: url(../images/circle_m@2x.png);
-    -webkit-background-size: 180px 180px;
-    background-size: 180px 180px;
-  }
-  .previous{
-    background-image: url(../images/previous@2x.png);
-    -webkit-background-size: 102px 102px;
-    background-size: 102px 102px;
-  }
-  .next{
-    background-image: url(../images/next@2x.png);
-    -webkit-background-size: 102px 102px;
-    background-size: 102px 102px;
-  }
-  .chapnav ol li {
-    background-image: url(../images/n-current_m@2x.png);
-    -webkit-background-size: 44px 44px;
-    background-size: 44px 44px;   
-  }
-  .chapnav ol li.current {
-    background-image: url(../images/current_m@2x.png);
-    -webkit-background-size: 44px 44px;
-    background-size: 44px 44px;   
-  }
-}
-@media
-only screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 655px),
-only screen and (min-device-pixel-ratio: 1.5) and (max-width: 655px) {
-  .purchase{
-    background-image: url(../images/circle_s@2x.png);
-    -webkit-background-size: 125px 125px;
-    background-size: 125px 125px;
-  }
+@media screen and (max-width: 800px) {
+
+  .content {
+  clear: both;
+  margin: 0 auto;
+  width: 90%;
 }
 
+  /* ----- Header ----- */
 
+header {
+  text-align: center;
+  width: 90%;
+}
+
+.logo {
+  float: none;
+  height: 62px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ----- Navigation----- */
+
+nav {
+  float: none;
+}
+
+/* ----- Hero ----- */
+.hero {
+  font-size: 5.5em;
+}
+
+/* ----- Contact ----- */
+
+#contact p {
+  font-size: 1.6em;
+}
+
+#contact aside {
+  padding: 15px 0 15px 15px;
+}
+
+#contact .foney {
+  font-size: 2.6em;
+}
+
+#contact a.emaily {
+  font-size: 1.6em;
+}
+
+#contact .addy {
+  font-size: 1.3em;
+}
+
+/* ----- About ----- */
+
+#about p {
+  font-size: 1.6em;
+}
+}
+
+/* < 700px */
+
+@media screen and (max-width: 700px) {
+
+
+/* ----- Misc ----- */
+
+h2 {
+  text-align: center;
+}
+
+/* ----- Hero ----- */
+.hero {
+  font-size: 4.5em;
+}
+
+/* ----- Contact ----- */
+
+#contact p {
+  font-size: 1.6em;
+  float: left;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+#contact aside {
+  border-left: none;
+  float: none;
+  padding: none;
+  margin: 0 auto;
+  text-align: center;
+  width: inherit;
+}
+
+#contact .foney {
+  text-align: center;
+}
+
+/* ----- About ----- */
+
+#about img {
+  width: 50%;
+}
+}
